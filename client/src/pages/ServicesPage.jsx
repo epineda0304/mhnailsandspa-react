@@ -27,7 +27,7 @@ export default function ServicesPage() {
     async function grabServices() {
       try {
         setIsLoading(true);
-        const res = await fetch(`http://localhost:8000/services/${type}`);
+        const res = await fetch(`/services/${type}`);
 
         if (!res.ok) {
           throw new Error("Something went wrong");
@@ -300,7 +300,7 @@ function ServiceSection({ services, discounts, isLoading }) {
 
       const staffUrl = `/staff/${service.itemData.variations[0].id}?version=${service.itemData.variations[0].version}`;
 
-      const res = await fetch(`http://localhost:8000${staffUrl}`);
+      const res = await fetch(`${staffUrl}`);
 
       const jsonRes = await res.json();
 
@@ -503,7 +503,7 @@ function MainModal({
 
       const staffUrl = `/availability/${selectedProvider.teamMemberId}/${variation.id}?version=${version}`;
 
-      const res = await fetch(`http://localhost:8000${staffUrl}`);
+      const res = await fetch(`${staffUrl}`);
 
       const jsonRes = await res.json();
 

@@ -79,7 +79,7 @@ export default function CustomerContactPage() {
         addOns
       )}`;
 
-      const res = await fetch(`http://localhost:8000${bookingUrl}`, {
+      const res = await fetch(`${bookingUrl}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
