@@ -46,7 +46,7 @@ app.use(cookieParser());
 
 app.use("/", routes);
 
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Server Listening on Port ${PORT}`);
