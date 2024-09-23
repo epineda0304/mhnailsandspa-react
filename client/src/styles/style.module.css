@@ -1,0 +1,61 @@
+.offwhitebg {
+  background-color: #faf9f6;
+}
+
+.welcomeImage {
+  width: 100vw;
+  height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sliderImage {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 60vh;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+.unselectedMenuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: "2px solid black";
+  background-color: "#faf9f6";
+}
+
+.selectedMenuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: "2px solid black";
+  background-color: "black";
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .welcomeImage {
+    height: 30vh;
+  }
+
+  .sliderImage {
+    height: 36vh;
+  }
+
+  .receipt {
+    width: 100%;
+  }
+}
