@@ -187,14 +187,31 @@ function ServiceCatalog() {
             Waxes
           </div>
         </a>
-        <div
+        <a
+          href="/serviceMenu/Combos"
+          style={{ textDecoration: "none", color: "Black" }}
+        >
+          <div
+            className="d-flex justify-content-center align-items-center"
+            style={{
+              width: "74px",
+              height: "74px",
+              borderRadius: "50%",
+              border: "2px solid black",
+              backgroundColor: "#faf9f6",
+            }}
+          >
+            Combos
+          </div>
+        </a>
+        {/* <div
           className="d-flex justify-content-center align-items-center"
           style={{
             width: "74px",
             height: "74px",
             borderRadius: "50%",
           }}
-        ></div>
+        ></div> */}
       </Container>
     </>
   );

@@ -9,6 +9,7 @@ import NailsImage from "../assets/manicure.png";
 import PedicureImage from "../assets/pedicure.jpeg";
 import FacialImage from "../assets/facial.jpeg";
 import WaxImage from "../assets/waxes.jpg";
+import CombosImage from "../assets/combos.jpg";
 
 import LocationPage from "./LocationPage";
 
@@ -110,7 +111,12 @@ function ServicesWrapper() {
           details={"Deals"}
           parameter={"Deal"}
         />
-        <ServiceDetails />
+        <ServiceDetails
+          imageSrc={CombosImage}
+          details={"Combos"}
+          parameter={"Combos"}
+        />
+        {/* <ServiceDetails /> */}
       </Container>
     </>
   );
