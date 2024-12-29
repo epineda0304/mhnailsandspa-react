@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/esm/Container";
 // import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-import Modal from "react-bootstrap/Modal";
+// import Modal from "react-bootstrap/Modal";
 
 import HomeBgLogo from "../assets/HomeBg.jpeg";
 import AdImage from "../assets/SpecialsAd.jpeg";
@@ -13,19 +13,19 @@ import CombosImage from "../assets/combos.jpg";
 
 import LocationPage from "./LocationPage";
 
-import { useState } from "react";
+// import { useState } from "react";
 
 import styles from "../styles/style.module.css";
 
 export default function HomePage() {
-  const [modalShow, setModalShow] = useState(true);
+  // const [modalShow, setModalShow] = useState(true);
 
   return (
     <>
       <HomeBackgroundImage />
       <ServicesSection />
       <LocationPage />
-      <AdPopup show={modalShow} onHide={() => setModalShow(false)} />
+      {/* <AdPopup show={modalShow} onHide={() => setModalShow(false)} /> */}
     </>
   );
 }
@@ -135,19 +135,19 @@ function ServicesSection() {
   );
 }
 
-function AdPopup(props) {
-  return (
-    <Modal
-      {...props}
-      size="md"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton></Modal.Header>
-      <img alt="Ad" src={AdImage} className="w-100 h-50" />
-    </Modal>
-  );
-}
+// function AdPopup(props) {
+//   return (
+//     <Modal
+//       {...props}
+//       size="md"
+//       aria-labelledby="contained-modal-title-vcenter"
+//       centered
+//     >
+//       <Modal.Header closeButton></Modal.Header>
+//       <img alt="Ad" src={AdImage} className="w-100 h-50" />
+//     </Modal>
+//   );
+// }
 
 // function CarouselsGallery() {
 //   return (

@@ -16,8 +16,6 @@ import RightIcon from "../assets/icons/right-icon.svg";
 
 import ServiceCatalog from "../components/ServiceCatalog.jsx";
 
-import Snowfall from "react-snowfall";
-
 import "react-calendar/dist/Calendar.css";
 
 const _pediAddOns = [
@@ -206,19 +204,8 @@ function ServiceSection({ services, discounts, isLoading }) {
     <>
       <Container
         fluid
-        style={{ minHeight: "100vh", backgroundColor: "#A7C7E7" }}
+        style={{ minHeight: "100vh", backgroundColor: "#5f8575" }}
       >
-        <Snowfall
-          color="white"
-          snowflakeCount={175}
-          speed={[0.5, 2]}
-          radius={[0.5, 2.5]}
-          style={{
-            position: "fixed",
-            width: "100vw",
-            height: "100vh",
-          }}
-        />
         <ServiceCatalog type={type} />
         <h3 className="text-center">Select a Service</h3>
         {isLoading ? (

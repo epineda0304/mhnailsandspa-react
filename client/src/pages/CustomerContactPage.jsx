@@ -7,8 +7,6 @@ import { useParams, useSearchParams } from "react-router-dom";
 
 import ConfirmationPage from "./ConfirmationPage";
 
-import Snowfall from "react-snowfall";
-
 export default function CustomerContactPage() {
   const [searchParams] = useSearchParams();
   const { staffId, serviceId } = useParams();
@@ -116,19 +114,8 @@ export default function CustomerContactPage() {
     <>
       <Container
         fluid
-        style={{ minHeight: "100vh", backgroundColor: "#A7C7E7" }}
+        style={{ minHeight: "100vh", backgroundColor: "#faf9f6" }}
       >
-        <Snowfall
-          color="white"
-          snowflakeCount={175}
-          speed={[0.5, 2]}
-          radius={[0.5, 2.5]}
-          style={{
-            position: "fixed",
-            width: "100vw",
-            height: "100vh",
-          }}
-        />
         {showConfirmation ? (
           <ConfirmationPage
             booking={bookingInfo}

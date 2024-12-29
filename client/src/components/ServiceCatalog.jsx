@@ -8,8 +8,8 @@ export default function ServiceCatalog({ type }) {
     if (menuEl != null) {
       for (let i = 0; i < menuEl.children.length; i++) {
         if (menuEl.children[i].innerHTML.includes(type)) {
-          menuEl.children[i].children[0].style.backgroundColor = "#478778";
-          menuEl.children[i].children[0].style.color = "White";
+          menuEl.children[i].children[0].style.backgroundColor = "black";
+          menuEl.children[i].children[0].style.color = "white";
         }
       }
     }
@@ -19,8 +19,8 @@ export default function ServiceCatalog({ type }) {
     if (menu2El != null) {
       for (let i = 0; i < menu2El.children.length; i++) {
         if (menu2El.children[i].innerHTML.includes(type)) {
-          menu2El.children[i].children[0].style.backgroundColor = "#478778";
-          menu2El.children[i].children[0].style.color = "White";
+          menu2El.children[i].children[0].style.backgroundColor = "black";
+          menu2El.children[i].children[0].style.color = "white";
         }
       }
     }
@@ -37,7 +37,7 @@ export default function ServiceCatalog({ type }) {
           href="/serviceMenu/Deal"
           style={{
             textDecoration: "none",
-            color: "Black",
+            color: "black",
           }}
         >
           <div
@@ -47,8 +47,8 @@ export default function ServiceCatalog({ type }) {
               height: "74px",
               borderRadius: "50%",
               border: "2px solid black",
-              backgroundColor: "#DC143C",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
             }}
           >
             Deals
@@ -65,8 +65,8 @@ export default function ServiceCatalog({ type }) {
               height: "74px",
               borderRadius: "50%",
               border: "2px solid black",
-              backgroundColor: "#DC143C",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
             }}
           >
             Facials
@@ -83,8 +83,8 @@ export default function ServiceCatalog({ type }) {
               height: "74px",
               borderRadius: "50%",
               border: "2px solid black",
-              backgroundColor: "#DC143C",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
             }}
           >
             Nails
@@ -106,8 +106,8 @@ export default function ServiceCatalog({ type }) {
               height: "74px",
               borderRadius: "50%",
               border: "2px solid black",
-              backgroundColor: "#DC143C",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
             }}
           >
             Pedicure
@@ -124,8 +124,8 @@ export default function ServiceCatalog({ type }) {
               height: "74px",
               borderRadius: "50%",
               border: "2px solid black",
-              backgroundColor: "#DC143C",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
             }}
           >
             Waxes
@@ -142,8 +142,8 @@ export default function ServiceCatalog({ type }) {
               height: "74px",
               borderRadius: "50%",
               border: "2px solid black",
-              backgroundColor: "#DC143C",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
             }}
           >
             Combos
