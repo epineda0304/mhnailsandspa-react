@@ -34,7 +34,7 @@ export default function ServiceCatalog({ type }) {
         id="menu1"
       >
         <a
-          href="/serviceMenu/Deal"
+          href="/serviceMenu/Massage"
           style={{
             textDecoration: "none",
             color: "black",
@@ -51,7 +51,7 @@ export default function ServiceCatalog({ type }) {
               color: "black",
             }}
           >
-            Deals
+            Massages
           </div>
         </a>
         <a
