@@ -4,13 +4,14 @@ import Image from "react-bootstrap/Image";
 import Modal from "react-bootstrap/Modal";
 
 import HomeBgLogo from "../assets/HomeBg.jpeg";
-import AdImage from "../assets/SpecialsAd.jpeg";
-import massageImage from "../assets/massages.jpg";
+// import AdImage from "../assets/SpecialsAd.jpeg";
+// import massageImage from "../assets/massages.jpg";
 import NailsImage from "../assets/manicure.png";
 import PedicureImage from "../assets/pedicure.jpeg";
 import FacialImage from "../assets/facial.jpeg";
 import WaxImage from "../assets/waxes.jpg";
 import CombosImage from "../assets/combos.jpg";
+// import ProfileImage from "../assets/temp.jpg";
 
 import LocationPage from "./LocationPage";
 
@@ -25,6 +26,7 @@ export default function HomePage() {
     <>
       <HomeBackgroundImage />
       <ServicesSection />
+      {/* <AboutSection /> */}
       <LocationPage />
       <AdPopup show={modalShow} onHide={() => setModalShow(false)} />
     </>
@@ -96,28 +98,28 @@ function ServicesWrapper() {
           parameter={"Pedicure"}
         />
         <ServiceDetails
-          imageSrc={FacialImage}
-          details={"Facials"}
-          parameter={"Facial"}
-        />
-      </Container>
-      <Container className="d-flex flex-wrap justify-content-around mt-4 pb-4">
-        <ServiceDetails
           imageSrc={WaxImage}
           details={"Waxes"}
           parameter={"Wax"}
         />
+      </Container>
+      <Container className="d-flex flex-wrap justify-content-around mt-4 pb-4">
         <ServiceDetails
-          imageSrc={massageImage}
-          details={"Massages"}
-          parameter={"Massage"}
+          imageSrc={FacialImage}
+          details={"Facials"}
+          parameter={"Facial"}
         />
+        {/* <ServiceDetails
+          imageSrc={massageImage}
+          details={"Deals"}
+          parameter={"Deal"}
+        /> */}
         <ServiceDetails
           imageSrc={CombosImage}
           details={"Combos"}
           parameter={"Combos"}
         />
-        {/* <ServiceDetails /> */}
+        <ServiceDetails />
       </Container>
     </>
   );
@@ -136,6 +138,42 @@ function ServicesSection() {
   );
 }
 
+// function AboutSection() {
+//   return (
+//     <Container fluid className="d-flex flex-column align-items-center">
+//       <h3 className="pt-5 mb-4 text-center">About Us</h3>
+//       <Image
+//         src={ProfileImage}
+//         height={225}
+//         width={225}
+//         roundedCircle
+//         className="border border-success border-4"
+//       />
+//       <p className="text-center mt-3 pb-31 w-75">
+//         Right here is a few setences saying whatever it is that maria wants here
+//         this is just simply a place holder so I dont go insane Right here is a
+//         few setences saying whatever it is that maria wants here this is just
+//         simply a place holder so I dont go insane
+//       </p>
+//     </Container>
+//   );
+// }
+
+// function AdPopup(props) {
+//   return (
+//     <Modal
+//       {...props}
+//       size="md"
+//       aria-labelledby="contained-modal-title-vcenter"
+//       centered
+//     >
+//       <Modal.Header closeButton></Modal.Header>
+//       <img alt="Ad" src={AdImage} className="w-100 h-50" />
+//     </Modal>
+//   );
+// }
+
+// Displaying Messages
 function AdPopup(props) {
   return (
     <Modal
@@ -144,8 +182,15 @@ function AdPopup(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton></Modal.Header>
-      <img alt="Ad" src={AdImage} className="w-100 h-50" />
+      <Modal.Header closeButton>We&#39;re Moving!</Modal.Header>
+      <Modal.Body>
+        <p>
+          We&#39;re sorry for the inconvenience, due to us relocating, for the
+          next 2 weeks we&#39;re only accepting appointments Thursdays and
+          Saturdays by phone calls only. <br />
+          Please call us at: 407-870-3826
+        </p>
+      </Modal.Body>
     </Modal>
   );
 }

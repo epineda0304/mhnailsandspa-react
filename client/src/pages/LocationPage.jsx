@@ -38,7 +38,7 @@ function ContactSection() {
       </div>
       <ContactDetails
         title={"Address"}
-        lineOne={"44 Lawton Ave"}
+        lineOne={"120 Alexandria Boulevard, #13"}
         lineTwo={"Oviedo FL, 32765"}
       />
       <ContactDetails

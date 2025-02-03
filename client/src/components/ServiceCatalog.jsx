@@ -29,49 +29,9 @@ export default function ServiceCatalog({ type }) {
   return (
     <>
       <Container
-        onLoad={selectedMenuItem()}
         className="d-flex flex-wrap justify-content-around pt-5"
-        id="menu1"
+        id="menu2"
       >
-        <a
-          href="/serviceMenu/Massage"
-          style={{
-            textDecoration: "none",
-            color: "black",
-          }}
-        >
-          <div
-            className="d-flex justify-content-center align-items-center"
-            style={{
-              width: "74px",
-              height: "74px",
-              borderRadius: "50%",
-              border: "2px solid black",
-              backgroundColor: "white",
-              color: "black",
-            }}
-          >
-            Massages
-          </div>
-        </a>
-        <a
-          href="/serviceMenu/Facial"
-          style={{ textDecoration: "none", color: "Black" }}
-        >
-          <div
-            className="d-flex justify-content-center align-items-center"
-            style={{
-              width: "74px",
-              height: "74px",
-              borderRadius: "50%",
-              border: "2px solid black",
-              backgroundColor: "white",
-              color: "black",
-            }}
-          >
-            Facials
-          </div>
-        </a>
         <a
           href="/serviceMenu/Nails"
           style={{ textDecoration: "none", color: "Black" }}
@@ -90,11 +50,6 @@ export default function ServiceCatalog({ type }) {
             Nails
           </div>
         </a>
-      </Container>
-      <Container
-        className="d-flex flex-wrap justify-content-around mt-4 pb-4"
-        id="menu2"
-      >
         <a
           href="/serviceMenu/Pedicure"
           style={{ textDecoration: "none", color: "Black" }}
@@ -131,6 +86,30 @@ export default function ServiceCatalog({ type }) {
             Waxes
           </div>
         </a>
+      </Container>
+      <Container
+        onLoad={selectedMenuItem()}
+        className="d-flex flex-wrap justify-content-around mt-4 pb-5"
+        id="menu1"
+      >
+        <a
+          href="/serviceMenu/Facial"
+          style={{ textDecoration: "none", color: "Black" }}
+        >
+          <div
+            className="d-flex justify-content-center align-items-center"
+            style={{
+              width: "74px",
+              height: "74px",
+              borderRadius: "50%",
+              border: "2px solid black",
+              backgroundColor: "white",
+              color: "black",
+            }}
+          >
+            Facials
+          </div>
+        </a>
         <a
           href="/serviceMenu/Combos"
           style={{ textDecoration: "none", color: "Black" }}
@@ -149,14 +128,35 @@ export default function ServiceCatalog({ type }) {
             Combos
           </div>
         </a>
-        {/* <div
+        <div
+          className="d-flex justify-content-center align-items-center"
+          style={{
+            width: "74px",
+            height: "74px",
+            borderRadius: "50%",
+          }}
+        ></div>
+        {/* <a
+          href="/serviceMenu/Deal"
+          style={{
+            textDecoration: "none",
+            color: "black",
+          }}
+        >
+          <div
             className="d-flex justify-content-center align-items-center"
             style={{
               width: "74px",
               height: "74px",
               borderRadius: "50%",
+              border: "2px solid black",
+              backgroundColor: "white",
+              color: "black",
             }}
-          ></div> */}
+          >
+            Deals
+          </div>
+        </a> */}
       </Container>
     </>
   );

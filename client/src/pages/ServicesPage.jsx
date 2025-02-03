@@ -166,6 +166,8 @@ function ServiceSection({ services, discounts, isLoading }) {
     async function HandleBookNow() {
       let service = null;
 
+      if (service == null) return;
+
       if (currentServiceId === "") return;
 
       for (let i = 0; i < services.length; i++) {
