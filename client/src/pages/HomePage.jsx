@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/esm/Container";
 // import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-import Modal from "react-bootstrap/Modal";
+// import Modal from "react-bootstrap/Modal";
 
 import HomeBgLogo from "../assets/HomeBg.jpeg";
 // import AdImage from "../assets/SpecialsAd.jpeg";
@@ -20,7 +20,7 @@ import { useState } from "react";
 import styles from "../styles/style.module.css";
 
 export default function HomePage() {
-  const [modalShow, setModalShow] = useState(true);
+  // const [modalShow, setModalShow] = useState(true);
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function HomePage() {
       <ServicesSection />
       {/* <AboutSection /> */}
       <LocationPage />
-      <AdPopup show={modalShow} onHide={() => setModalShow(false)} />
+      {/* <AdPopup show={modalShow} onHide={() => setModalShow(false)} /> */}
     </>
   );
 }
@@ -174,26 +174,26 @@ function ServicesSection() {
 // }
 
 // Displaying Messages
-function AdPopup(props) {
-  return (
-    <Modal
-      {...props}
-      size="md"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>We&#39;re Moving!</Modal.Header>
-      <Modal.Body>
-        <p>
-          We&#39;re sorry for the inconvenience, due to us relocating, for the
-          next 2 weeks we&#39;re only accepting appointments Thursdays and
-          Saturdays by phone calls only. <br />
-          Please call us at: 407-870-3826
-        </p>
-      </Modal.Body>
-    </Modal>
-  );
-}
+// function AdPopup(props) {
+//   return (
+//     <Modal
+//       {...props}
+//       size="md"
+//       aria-labelledby="contained-modal-title-vcenter"
+//       centered
+//     >
+//       <Modal.Header closeButton>We&#39;re Moving!</Modal.Header>
+//       <Modal.Body>
+//         <p>
+//           We&#39;re sorry for the inconvenience, due to us relocating, for the
+//           next 2 weeks we&#39;re only accepting appointments Thursdays and
+//           Saturdays by phone calls only. <br />
+//           Please call us at: 407-870-3826
+//         </p>
+//       </Modal.Body>
+//     </Modal>
+//   );
+// }
 
 // function CarouselsGallery() {
 //   return (
