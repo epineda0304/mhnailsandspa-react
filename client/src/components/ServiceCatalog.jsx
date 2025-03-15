@@ -128,15 +128,15 @@ export default function ServiceCatalog({ type }) {
             Combos
           </div>
         </a>
-        <div
+        {/* <div
           className="d-flex justify-content-center align-items-center"
           style={{
             width: "74px",
             height: "74px",
             borderRadius: "50%",
           }}
-        ></div>
-        {/* <a
+        ></div> */}
+        <a
           href="/serviceMenu/Deal"
           style={{
             textDecoration: "none",
@@ -156,7 +156,7 @@ export default function ServiceCatalog({ type }) {
           >
             Deals
           </div>
-        </a> */}
+        </a>
       </Container>
     </>
   );

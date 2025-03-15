@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/esm/Container";
 // import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-// import Modal from "react-bootstrap/Modal";
+import Modal from "react-bootstrap/Modal";
 
 import HomeBgLogo from "../assets/HomeBg.jpeg";
-// import AdImage from "../assets/SpecialsAd.jpeg";
+import AdImage from "../assets/SpecialsAd.jpeg";
 // import massageImage from "../assets/massages.jpg";
 import NailsImage from "../assets/manicure.png";
 import PedicureImage from "../assets/pedicure.jpeg";
@@ -20,7 +20,7 @@ import { useState } from "react";
 import styles from "../styles/style.module.css";
 
 export default function HomePage() {
-  // const [modalShow, setModalShow] = useState(true);
+  const [modalShow, setModalShow] = useState(true);
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function HomePage() {
       <ServicesSection />
       {/* <AboutSection /> */}
       <LocationPage />
-      {/* <AdPopup show={modalShow} onHide={() => setModalShow(false)} /> */}
+      <AdPopup show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 }
@@ -109,17 +109,17 @@ function ServicesWrapper() {
           details={"Facials"}
           parameter={"Facial"}
         />
-        {/* <ServiceDetails
-          imageSrc={massageImage}
+        <ServiceDetails
+          imageSrc={AdImage}
           details={"Deals"}
           parameter={"Deal"}
-        /> */}
+        />
         <ServiceDetails
           imageSrc={CombosImage}
           details={"Combos"}
           parameter={"Combos"}
         />
-        <ServiceDetails />
+        {/* <ServiceDetails /> */}
       </Container>
     </>
   );
@@ -159,19 +159,19 @@ function ServicesSection() {
 //   );
 // }
 
-// function AdPopup(props) {
-//   return (
-//     <Modal
-//       {...props}
-//       size="md"
-//       aria-labelledby="contained-modal-title-vcenter"
-//       centered
-//     >
-//       <Modal.Header closeButton></Modal.Header>
-//       <img alt="Ad" src={AdImage} className="w-100 h-50" />
-//     </Modal>
-//   );
-// }
+function AdPopup(props) {
+  return (
+    <Modal
+      {...props}
+      size="md"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton></Modal.Header>
+      <img alt="Ad" src={AdImage} className="w-100 h-50" />
+    </Modal>
+  );
+}
 
 // Displaying Messages
 // function AdPopup(props) {
